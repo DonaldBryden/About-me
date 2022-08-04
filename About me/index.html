@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>About me</title>
+</head>
+<body>
+    <header>
+    <nav class="topnav">
+        <h2 id="logo">Donald Bryden</h2>
+        <ul class="nav__links">
+            <li class="navigation-item">
+                <a href="#about-me">About Me</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#skills">Skills</a>
+            </li>
+            <li class="navigation-item">
+                <a href="index2.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!--  the about me section --> 
+    <main>
+        <section id="about-me">
+            <div class="about-me-container">
+                <div class="about-me-text-container">
+                    <h2>About Me</h2>
+                    <p> Hello, I'm Donald Bryden and I am a Scottish Front-end Web Developer based in the Edinburgh/Fife area. I am currerntly working as the IT Manager for H&M customer service center based in the heart of Edinbrugh.
+                    </p>
+                    <p>I have been studying web development for about a year now and have a keen interest in moving carreers to begin my journey as a developer. It's been a dream of mine to be able to code and I am so happy to constanly learn.</p>
+                    <p>In my free time, I love to take my dog out for walks. I have a kickboxing red belt and play the guitar</p>
+                    <p>Fun fact! I've been alive for <span id="time-container"></span> seconds!</p>
+                </div>
+                <div class="myimage">
+                    <img src="C:\Users\donal\Documents\Code Projects\About me\1633982905448.jpg" alt="A photo of Donald" class="profile">
+                </div>
+                </div>
+        </section>
+
+        <!--  Projects section --> 
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>The NFT dog website</h3>
+                </summary>
+                <img src="dW.PNG" alt="Daisys World Screenshot" class="project-image">
+                <p>The world's first dog run NFT website</p>
+            </details>
+
+
+
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Kickboxing</h3>
+                </summary>
+                <img src="KB.jpg" alt="kickboxing class" class="project-image">
+                <p>Recieving my red belt in my first grading</p>
+            </details>
+        </section>
+
+
+        <!-- Skills section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <i class="fa fa-html5"></i>
+                <i class="fa fa-css3" aria-hidden="true"></i>
+                <i class="fa fa-spinner" aria-hidden="true"></i>
+                <i class="fa fa-git" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-chrome" aria-hidden="true"></i>
+            </div>
+        </section>
+</main>
+<footer>
+    <div id="footer">Made by my <i class="fa fa-paw"></i> and I in Fife</div>
+</footer>
+
+<script>
+    
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "04-23-1992";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  
+</script>
+</body>
+</html>
