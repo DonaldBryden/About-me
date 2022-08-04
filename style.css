@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@1&family=Montserrat:wght@100;300;500;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Space+Mono&display=swap');
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  }
+
+/* Header and body */
+
+* {
+    box-sizing: border-box;
+    background-color: #24252a;
+    margin: 0;
+    
+}
+
+main {
+    display: block;
+
+}
+
+body {
+    font-family: "montserrat", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    color: antiquewhite;
+    
+    
+}
+h2 {
+    color: antiquewhite;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+}
+
+li, a {
+    font-size: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0%;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 1px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: aquamarine;
+}
+
+
+/* About me and image */
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container {
+    margin-right: 15px;
+}
+.about-me-container img {
+    border-radius: 60%;
+    max-width: 400px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-start: 0px;
+}
+
+.project-image {
+    width: 70%;
+}
+
+section {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-start: 0px;
+    
+}
+
+summary {
+    cursor: pointer;
+    padding: 1% 0;
+}
+
+summary > * {
+    display: inline;
+    cursor: pointer;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    font-size: 3em;
+}
+
+.fab {
+    font-weight: 400;
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 40px;
+    text-align: center;
+    width: 900px;
+}
